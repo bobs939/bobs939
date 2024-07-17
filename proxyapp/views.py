@@ -10,6 +10,10 @@ def tableview(request):
         data = [dict(zip(columns, row)) for row in cursor.fetchall()]
         return JsonResponse({'data': data})
 
+def new(request):
+    print("hello")
+    return "hi"
+
 # appname/views.py
 # from rest_framework.response import Response
 # from rest_framework.decorators import api_view
